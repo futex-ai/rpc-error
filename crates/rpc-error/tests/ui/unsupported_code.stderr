@@ -1,0 +1,5 @@
+error: unsupported rpc_error code
+ --> tests/ui/unsupported_code.rs:6:24
+  |
+6 |     #[rpc_error(code = "teapot", reason = "short-and-stout")]
+  |                        ^^^^^^^^

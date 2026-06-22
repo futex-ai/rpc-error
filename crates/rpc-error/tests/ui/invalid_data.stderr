@@ -1,0 +1,5 @@
+error: unsupported data value; use include, true, omit, none, skip, or false
+ --> tests/ui/invalid_data.rs:6:74
+  |
+6 |     #[rpc_error(code = "bad-request", reason = "secret-rejected", data = "omti")]
+  |                                                                          ^^^^^^

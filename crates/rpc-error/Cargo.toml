@@ -1,0 +1,39 @@
+[package]
+name = "rpc-error"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+repository.workspace = true
+description = "Typed RPC and HTTP error envelopes with feature-gated Actix and Axum adapters"
+
+[features]
+default = []
+actix = ["dep:actix-web", "dep:futures-util", "dep:tokio"]
+axum = ["dep:axum", "dep:tokio"]
+derive = ["dep:rpc-error-derive"]
+
+[dependencies]
+actix-web = { version = "4.14.0", optional = true }
+axum = { version = "0.8.9", optional = true }
+futures-util = { version = "0.3.32", optional = true }
+rpc-error-derive = { workspace = true, optional = true }
+serde = { version = "1.0.228", features = ["derive"] }
+serde_json = "1.0.150"
+thiserror = "2.0.18"
+tokio = { version = "1.52.3", features = ["rt"], optional = true }
+tracing = "0.1.44"
+uuid = { version = "1.23.3", features = ["v4"] }
+
+[dev-dependencies]
+insta = { version = "1.48.0", features = ["json"] }
+reqwest = { version = "0.13.4", features = ["json"] }
+thiserror = "2.0.18"
+tokio = { version = "1.52.3", features = ["macros", "net", "rt-multi-thread"] }
+tower = { version = "0.5.3", features = ["util"] }
+tracing-subscriber = "0.3.23"
+trybuild = "1.0.117"
+
+[[example]]
+name = "accounting_axum"
+required-features = ["derive", "axum"]

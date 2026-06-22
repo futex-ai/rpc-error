@@ -1,0 +1,5 @@
+error: reason code must be lowercase kebab-case ASCII
+ --> tests/ui/invalid_reason.rs:6:5
+  |
+6 |     #[rpc_error(code = "bad-request", reason = "validation_failed")]
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

@@ -1,0 +1,7 @@
+error: delegate attribute requires one unnamed field
+ --> tests/ui/invalid_delegate.rs:6:5
+  |
+6 | /     #[delegate]
+7 | |     #[error("[ui] invalid delegate")]
+8 | |     InvalidDelegate,
+  | |___________________^

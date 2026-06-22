@@ -1,0 +1,5 @@
+error: serde field attributes are not supported on single-field data variants
+ --> tests/ui/single_field_serde_attr.rs:8:12
+  |
+8 |     Single(#[serde(skip)] String),
+  |            ^^^^^^^^^^^^^^^^^^^^^

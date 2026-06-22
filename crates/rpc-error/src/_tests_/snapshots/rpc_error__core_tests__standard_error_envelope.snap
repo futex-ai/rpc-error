@@ -1,0 +1,15 @@
+---
+source: crates/rpc-error/src/_tests_/core_tests.rs
+expression: error.output()
+---
+{
+  "error": {
+    "code": "not-found",
+    "reason": "book-not-found",
+    "message": "Book was not found",
+    "request_id": "req_123",
+    "data": {
+      "book_id": "book_123"
+    }
+  }
+}

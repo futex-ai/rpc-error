@@ -1,0 +1,5 @@
+error: delegate attribute does not accept arguments
+ --> tests/ui/invalid_delegate_args.rs:6:5
+  |
+6 |     #[delegate(reason = "nested")]
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
