@@ -1,0 +1,18 @@
+[workspace]
+members = [
+    "crates/rpc-error",
+    "crates/rpc-error-derive",
+    "xtask",
+]
+resolver = "2"
+
+[workspace.package]
+edition = "2024"
+version = "0.1.0"
+license = "MIT"
+authors = ["Futex"]
+repository = "https://github.com/futex-ai/rpc-error"
+
+[workspace.dependencies]
+rpc-error = { path = "crates/rpc-error" }
+rpc-error-derive = { path = "crates/rpc-error-derive" }
