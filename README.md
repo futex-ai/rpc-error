@@ -5,8 +5,6 @@ handling. It standardizes error responses, maps domain errors to stable reason
 codes, and provides feature-gated Actix and Axum adapters so applications can
 opt into only the web framework they use.
 
-The active implementation plan is tracked in [plans](./plans/README.md).
-
 ## Key Features
 
 - Framework-neutral core error types with a stable structured JSON envelope.
@@ -64,14 +62,12 @@ Documentation-only changes should validate Markdown and review the diff.
 
 - `docs/protocol/rpc-error` - normative error contract and adapter behavior.
 - `docs/integration` - downstream migration guidance.
-- `plans` - active and completed implementation plans.
 - `crates/rpc-error` - framework-neutral public crate and adapters.
 - `crates/rpc-error-derive` - procedural macro crate.
 - `xtask` - local verification and AI review commands.
 
 ## Links
 
-- [Plans](./plans/README.md)
 - [Documentation](./docs/README.md)
 - [RPC error protocol](./docs/protocol/rpc-error/README.md)
 - [Accounting integration](./docs/integration/accounting.md)
