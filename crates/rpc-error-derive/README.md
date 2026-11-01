@@ -96,4 +96,3 @@ cargo test -p rpc-error --all-features
 
 - [Runtime crate](../rpc-error/README.md)
 - [RPC error protocol](../../docs/protocol/rpc-error/README.md)
-- [Implementation plan](../../plans/rpc-error-workspace-implementation.md)

@@ -147,4 +147,3 @@ cargo xtask review
 
 - [Workspace README](../../README.md)
 - [RPC error protocol](../../docs/protocol/rpc-error/README.md)
-- [Implementation plan](../../plans/rpc-error-workspace-implementation.md)

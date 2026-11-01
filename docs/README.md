@@ -1,6 +1,6 @@
 # Documentation
 
-`rpc-error` documentation is split by contract and implementation planning.
+`rpc-error` documentation describes its contracts.
 
 ## Protocol
 
@@ -9,7 +9,3 @@
 ## Integration
 
 - [Accounting Axum Migration](./integration/accounting.md)
-
-## Planning
-
-- [Implementation plans](../plans/README.md)
