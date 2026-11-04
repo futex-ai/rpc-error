@@ -131,7 +131,6 @@ Run the local checks from the workspace root:
 cargo build --workspace
 cargo test --workspace
 cargo xtask check
-cargo xtask review
 ```
 
 ### Key Code
