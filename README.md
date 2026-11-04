@@ -53,8 +53,10 @@ Canonical error responses use this shape:
 cargo build --workspace
 cargo test --workspace
 cargo xtask check
-cargo xtask review
 ```
+
+`cargo xtask review` runs an optional, read-only AI review of the local diff
+against `origin/main`. It needs the `codex` CLI.
 
 Documentation-only changes should validate Markdown and review the diff.
 
